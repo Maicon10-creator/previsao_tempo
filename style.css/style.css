@@ -1,0 +1,96 @@
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #ffffff;
+    --accent: #60a5fa;
+}
+
+.light {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #000000;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    width: 100%;
+    max-width: 900px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.current {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.forecast {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.charts {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .forecast {
+        flex-direction: column;
+    }
+}
